@@ -1,5 +1,4 @@
 /* Page Header */
-
 .page-header {
     background: linear-gradient( 135deg, var(--color-accent-7), var(--color-accent-8));
     color: white;
@@ -16,9 +15,7 @@
     opacity: 0.9;
 }
 
-
 /* Filter Section */
-
 .filter-section {
     background-color: white;
     padding: var(--spacing-lg) 0;
@@ -80,9 +77,7 @@
     font-size: 0.9rem;
 }
 
-
 /* Destinasi Section */
-
 .destinasi-section {
     padding: var(--spacing-xl) 0;
 }
@@ -93,9 +88,7 @@
     gap: var(--spacing-lg);
 }
 
-
 /* Destinasi Card */
-
 .destinasi-card {
     background-color: white;
     border-radius: var(--radius-lg);
@@ -215,9 +208,7 @@
     gap: 0.5rem;
 }
 
-
 /* No Results */
-
 .no-results {
     text-align: center;
     padding: var(--spacing-2xl) var(--spacing-md);
@@ -228,9 +219,7 @@
     font-size: 1.1rem;
 }
 
-
 /* Mood Filter Styles */
-
 .mood-select {
     background-color: var(--color-gray-100);
     font-weight: 500;
@@ -256,9 +245,7 @@
     text-transform: capitalize;
 }
 
-
 /* Mood Theme Classes */
-
 body.mood-senang {
     --theme-color: var(--color-accent-3);
 }
@@ -307,9 +294,7 @@ body.mood-kuliner .page-header {
     background: linear-gradient(135deg, var(--color-secondary), var(--color-accent-1));
 }
 
-
 /* Apply theme color to elements */
-
 body[class*="mood-"] .btn-primary {
     background: linear-gradient(135deg, var(--theme-color), var(--color-primary));
 }
@@ -322,9 +307,7 @@ body[class*="mood-"] .filter-select:focus {
     border-color: var(--theme-color);
 }
 
-
 /* Mood Indicator on Card */
-
 .mood-indicator {
     position: absolute;
     top: var(--spacing-sm);
@@ -356,9 +339,7 @@ body[class*="mood-"] .filter-select:focus {
     }
 }
 
-
 /* Mood-specific card highlights */
-
 body.mood-senang .destinasi-card:hover {
     border: 2px solid var(--color-accent-3);
 }
@@ -383,9 +364,7 @@ body.mood-kuliner .destinasi-card:hover {
     border: 2px solid var(--color-secondary);
 }
 
-
 /* Enhanced filter section for mood */
-
 .filter-section {
     position: relative;
     overflow: hidden;
@@ -405,16 +384,13 @@ body[class*="mood-"] .filter-section::before {
 .maps-link {
     margin-left: 8px;
     color: #277da1;
-    /* dari palette-mu */
 }
 
 .maps-link:hover {
     color: #577590;
 }
 
-
 /* Mobile Responsive */
-
 @media (max-width: 1024px) {
     .filter-container {
         grid-template-columns: 1fr 1fr;
