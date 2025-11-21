@@ -1,5 +1,4 @@
 /* Global Reset and Base Styles */
-
 * {
     margin: 0;
     padding: 0;
@@ -55,18 +54,14 @@ body {
     overflow-x: hidden;
 }
 
-
 /* Container */
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
 }
 
-
 /* Navigation */
-
 .navbar {
     background-color: white;
     box-shadow: var(--shadow-sm);
@@ -118,9 +113,7 @@ body {
     background-color: var(--color-primary);
 }
 
-
 /* Buttons */
-
 .btn-primary,
 .btn-secondary {
     display: inline-block;
@@ -157,9 +150,7 @@ body {
     transform: translateY(-2px);
 }
 
-
 /* Footer */
-
 .footer {
     background-color: var(--color-gray-900);
     color: var(--color-gray-300);
@@ -172,9 +163,7 @@ body {
     margin: 0;
 }
 
-
 /* Responsive Typography */
-
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -198,9 +187,7 @@ p {
     line-height: 1.6;
 }
 
-
 /* Mobile Responsive */
-
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
