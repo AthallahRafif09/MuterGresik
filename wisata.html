@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinasi Wisata - MuterGresik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/assets/favicon/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/wisata.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>MuterGresik</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="wisata.html" class="active">Destinasi</a></li>
+                <li><a href="itinerary.html">Itinerary</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Destinasi Wisata Gresik</h1>
+            <p>Temukan tempat wisata favorit Anda</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <!-- Search -->
+                <div class="filter-group">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Cari destinasi..." />
+                </div>
+
+                <!-- Mood Filter (BARU) -->
+                <div class="filter-group">
+                    <select id="moodFilter" class="filter-select mood-select">
+              <option value="">Pilih Mood</option>
+              <option value="senang">😊 Senang</option>
+              <option value="healing">🌿 Healing</option>
+              <option value="galau">🌅 Galau</option>
+              <option value="tantangan">⛰️ Tantangan</option>
+              <option value="santai">🏖️ Santai</option>
+              <option value="kuliner">🍜 Kuliner</option>
+            </select>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="filter-group">
+                    <select id="categoryFilter" class="filter-select">
+              <option value="">Semua Kategori</option>
+              <option value="alam">Alam</option>
+              <option value="sejarah">Sejarah</option>
+              <option value="kuliner">Kuliner</option>
+              <option value="religi">Religi</option>
+            </select>
+                </div>
+
+                <!-- Location Filter -->
+                <div class="filter-group">
+                    <select id="locationFilter" class="filter-select">
+              <option value="">Semua Lokasi</option>
+              <option value="Manyar">Manyar</option>
+              <option value="Gresik Kota">Gresik Kota</option>
+              <option value="Kebomas">Kebomas</option>
+              <option value="Bungah">Bungah</option>
+              <option value="Bawean">Bawean</option>
+              <option value="Ujungpangkah">Ujungpangkah</option>
+            </select>
+                </div>
+
+                <!-- Reset Button -->
+                <div class="filter-group">
+                    <button id="resetFilter" class="btn-reset">Reset Filter</button>
+                </div>
+            </div>
+
+            <!-- Mood Info (BARU) -->
+            <div id="moodInfo" class="mood-info" style="display: none">
+                <p></p>
+            </div>
+
+            <!-- Result Count -->
+            <div class="result-info">
+                <p id="resultCount">Menampilkan semua destinasi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinasi Grid -->
+    <section class="destinasi-section">
+        <div class="container">
+            <div id="destinasiGrid" class="destinasi-grid">
+                <!-- Cards will be rendered here by JavaScript -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none">
+                <p>Tidak ada destinasi yang sesuai dengan pencarian Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2024 MuterGresik. Tim Selalu Di Depan.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>
