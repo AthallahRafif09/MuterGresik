@@ -1,0 +1,254 @@
+/* Hero Section */
+
+.hero {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-accent-8), var(--color-accent-5));
+    overflow: hidden;
+}
+
+
+/* Gambar Gapura Gresik FULL (BARU) */
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/img/gapura-gresik.jpeg');
+    background-size: cover;
+    /* Full cover background */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    /* Sesuaikan transparansi */
+    z-index: 1;
+}
+
+
+/* Overlay untuk menjaga kontras teks */
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient( to bottom, rgba(67, 170, 139, 0.7), rgba(39, 125, 161, 0.8));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 0 var(--spacing-md);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.95;
+    font-weight: 300;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Features Section */
+
+.features {
+    padding: var(--spacing-2xl) 0;
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-gray-900);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.feature-card {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background-color: var(--color-gray-100);
+    border-radius: var(--radius-xl);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-gray-900);
+}
+
+.feature-card p {
+    color: var(--color-gray-600);
+    font-size: 0.95rem;
+}
+
+
+/* CTA Section */
+
+.cta {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent-2));
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+    color: white;
+}
+
+.cta h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.cta p {
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+
+/* Mood Selection Section */
+
+.mood-selection {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-gray-100);
+}
+
+.mood-subtitle {
+    text-align: center;
+    color: var(--color-gray-600);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.mood-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mood-card {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.mood-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.mood-card.active {
+    border-color: var(--color-primary);
+    background: linear-gradient(135deg, rgba(249, 65, 68, 0.05), rgba(243, 114, 44, 0.05));
+}
+
+.mood-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.mood-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-gray-900);
+}
+
+.mood-card p {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    margin: 0;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    .hero {
+        height: 500px;
+    }
+    .hero::after {
+        width: 85%;
+        height: 70%;
+        opacity: 0.25;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    .features {
+        padding: var(--spacing-xl) 0;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    .mood-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: var(--spacing-sm);
+    }
+    .mood-icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 400px;
+    }
+    .hero::after {
+        width: 90%;
+        height: 60%;
+        opacity: 0.25;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .mood-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

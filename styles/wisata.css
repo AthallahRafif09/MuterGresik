@@ -1,0 +1,448 @@
+/* Page Header */
+
+.page-header {
+    background: linear-gradient( 135deg, var(--color-accent-7), var(--color-accent-8));
+    color: white;
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+/* Filter Section */
+
+.filter-section {
+    background-color: white;
+    padding: var(--spacing-lg) 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.filter-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.filter-group {
+    display: flex;
+}
+
+.search-input,
+.filter-select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--color-gray-300);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    font-family: "Poppins", sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus,
+.filter-select:focus {
+    outline: none;
+    border-color: var(--color-accent-5);
+}
+
+.filter-select {
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn-reset {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-gray-300);
+    color: var(--color-gray-800);
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-reset:hover {
+    background-color: var(--color-gray-400);
+}
+
+.result-info {
+    text-align: center;
+    color: var(--color-gray-600);
+    font-size: 0.9rem;
+}
+
+
+/* Destinasi Section */
+
+.destinasi-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.destinasi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+
+/* Destinasi Card */
+
+.destinasi-card {
+    background-color: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.destinasi-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.card-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.destinasi-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    padding: 0.375rem 0.75rem;
+    border-radius: var(--radius-md);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+}
+
+.badge-alam {
+    background-color: var(--color-accent-4);
+}
+
+.badge-sejarah {
+    background-color: var(--color-accent-7);
+}
+
+.badge-kuliner {
+    background-color: var(--color-accent-2);
+}
+
+.badge-religi {
+    background-color: var(--color-accent-6);
+}
+
+.card-content {
+    padding: var(--spacing-md);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-gray-900);
+}
+
+.card-location {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: var(--color-gray-600);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-location svg {
+    flex-shrink: 0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-gray-200);
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+}
+
+.card-rating svg {
+    flex-shrink: 0;
+}
+
+.card-link {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: gap 0.3s ease;
+}
+
+.card-link:hover {
+    gap: 0.5rem;
+}
+
+
+/* No Results */
+
+.no-results {
+    text-align: center;
+    padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.no-results p {
+    color: var(--color-gray-600);
+    font-size: 1.1rem;
+}
+
+
+/* Mood Filter Styles */
+
+.mood-select {
+    background-color: var(--color-gray-100);
+    font-weight: 500;
+}
+
+.mood-info {
+    text-align: center;
+    padding: var(--spacing-md);
+    background: linear-gradient(135deg, rgba(67, 170, 139, 0.1), rgba(144, 190, 109, 0.1));
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.mood-info p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--color-gray-800);
+    font-weight: 500;
+}
+
+.mood-info strong {
+    color: var(--color-accent-5);
+    text-transform: capitalize;
+}
+
+
+/* Mood Theme Classes */
+
+body.mood-senang {
+    --theme-color: var(--color-accent-3);
+}
+
+body.mood-senang .page-header {
+    background: linear-gradient(135deg, var(--color-accent-3), var(--color-accent-2));
+}
+
+body.mood-healing {
+    --theme-color: var(--color-accent-4);
+}
+
+body.mood-healing .page-header {
+    background: linear-gradient(135deg, var(--color-accent-4), var(--color-accent-5));
+}
+
+body.mood-galau {
+    --theme-color: var(--color-accent-7);
+}
+
+body.mood-galau .page-header {
+    background: linear-gradient(135deg, var(--color-accent-7), var(--color-accent-6));
+}
+
+body.mood-tantangan {
+    --theme-color: var(--color-primary);
+}
+
+body.mood-tantangan .page-header {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+body.mood-santai {
+    --theme-color: var(--color-accent-8);
+}
+
+body.mood-santai .page-header {
+    background: linear-gradient(135deg, var(--color-accent-8), var(--color-accent-5));
+}
+
+body.mood-kuliner {
+    --theme-color: var(--color-secondary);
+}
+
+body.mood-kuliner .page-header {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent-1));
+}
+
+
+/* Apply theme color to elements */
+
+body[class*="mood-"] .btn-primary {
+    background: linear-gradient(135deg, var(--theme-color), var(--color-primary));
+}
+
+body[class*="mood-"] .card-link {
+    color: var(--theme-color);
+}
+
+body[class*="mood-"] .filter-select:focus {
+    border-color: var(--theme-color);
+}
+
+
+/* Mood Indicator on Card */
+
+.mood-indicator {
+    position: absolute;
+    top: var(--spacing-sm);
+    left: var(--spacing-sm);
+    background-color: white;
+    padding: 0.375rem 0.625rem;
+    border-radius: var(--radius-md);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent-5);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    box-shadow: var(--shadow-md);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.mood-indicator svg {
+    flex-shrink: 0;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+/* Mood-specific card highlights */
+
+body.mood-senang .destinasi-card:hover {
+    border: 2px solid var(--color-accent-3);
+}
+
+body.mood-healing .destinasi-card:hover {
+    border: 2px solid var(--color-accent-4);
+}
+
+body.mood-galau .destinasi-card:hover {
+    border: 2px solid var(--color-accent-7);
+}
+
+body.mood-tantangan .destinasi-card:hover {
+    border: 2px solid var(--color-primary);
+}
+
+body.mood-santai .destinasi-card:hover {
+    border: 2px solid var(--color-accent-8);
+}
+
+body.mood-kuliner .destinasi-card:hover {
+    border: 2px solid var(--color-secondary);
+}
+
+
+/* Enhanced filter section for mood */
+
+.filter-section {
+    position: relative;
+    overflow: hidden;
+}
+
+body[class*="mood-"] .filter-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--theme-color), transparent);
+    opacity: 0.5;
+}
+
+.maps-link {
+    margin-left: 8px;
+    color: #277da1;
+    /* dari palette-mu */
+}
+
+.maps-link:hover {
+    color: #577590;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 1024px) {
+    .filter-container {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-sm);
+    }
+    .filter-group:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        grid-template-columns: 1fr;
+    }
+    .destinasi-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: var(--spacing-md);
+    }
+    .page-header {
+        padding: var(--spacing-lg) 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .destinasi-grid {
+        grid-template-columns: 1fr;
+    }
+    .card-image {
+        height: 200px;
+    }
+}
