@@ -1,5 +1,4 @@
 /* Page Header */
-
 .page-header {
     background: linear-gradient(135deg, var(--color-accent-7), var(--color-accent-8));
     color: white;
@@ -16,9 +15,7 @@
     opacity: 0.9;
 }
 
-
 /* Route Selection */
-
 .route-selection {
     padding: var(--spacing-2xl) 0;
 }
@@ -88,9 +85,7 @@
     box-shadow: var(--shadow-lg);
 }
 
-
 /* Itinerary Section */
-
 .itinerary-section {
     padding: var(--spacing-2xl) 0;
     animation: fadeIn 0.5s ease;
@@ -139,9 +134,7 @@
     background-color: var(--color-gray-300);
 }
 
-
 /* Itinerary Info */
-
 .itinerary-info {
     display: flex;
     gap: var(--spacing-lg);
@@ -165,9 +158,7 @@
     flex-shrink: 0;
 }
 
-
 /* Timeline */
-
 .timeline {
     position: relative;
     padding-left: 40px;
@@ -348,9 +339,7 @@
     background-color: var(--color-gray-300);
 }
 
-
 /* Itinerary Actions */
-
 .itinerary-actions {
     margin-top: var(--spacing-2xl);
     text-align: center;
@@ -366,9 +355,7 @@
     flex-shrink: 0;
 }
 
-
 /* Mobile Responsive */
-
 @media (max-width: 768px) {
     .route-grid {
         grid-template-columns: 1fr;
@@ -426,9 +413,7 @@
     }
 }
 
-
 /* Print Styles */
-
 @media print {
     .navbar,
     .page-header,
